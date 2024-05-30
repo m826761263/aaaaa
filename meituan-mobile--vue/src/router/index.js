@@ -16,6 +16,42 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
+    },
+    {
+      path: '/index',
+      name: 'index',
+      component: () => import('../views/MiaoIndex.vue')
+    },
+    {
+      path: '/list',
+      name: 'list',
+      component: () => import('../views/MiaoList.vue')
+    },
+    {
+      path: '/detail',
+      name: 'detail',
+      component: () => import('../views/MiaoDetile.vue')
+    },
+    {
+      path: '/my',
+      name: 'my',
+      component: () => import('../views/MiaoMy.vue')
+    },
+    {
+      path: '/cart',
+      name: 'cart',
+      component: () => import('../views/MiaoCart.vue')
+    },
+    {
+      path: '/settings',
+      name: 'settings',
+      component: () => import('../views/MiaoSettings.vue')
+    }
+    ,
+    {
+      path: '/massage',
+      name: 'massage',
+      component: () => import('../views/MiaoMassage.vue')
     }
   ]
 })
