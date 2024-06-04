@@ -1,0 +1,57 @@
+{
+    "shop": [
+        {
+            "id": 1,
+            "shopName":"米村拌饭（软景中心店）",
+            "name": "烤牛肉拌饭",
+            "spe":"正常",
+            "price": 27,
+            "image": "https://www.jiamengcy.com/uploads/230309/1-230309101429453.png"
+        },
+        {
+            "id": 2,
+            "shopName":"蛙呀挖·沸腾牛蛙·烤鱼",
+            "name": "炭烧紫苏香辣蛙",
+            "Spe":"1000克、微辣",
+            "price": 64.3,
+            "image": "https://img.zcool.cn/community/01e82061aad29d11013f01cda216c7.jpg"
+        },
+        {
+            "id": 3,
+            "shopName":"米村拌饭（软景中心店）",
+            "name": "烤牛肉拌饭",
+            "Spe":"正常",
+            "price": 27,
+            "image": "https://www.jiamengcy.com/uploads/230309/1-230309101429453.png"
+        },
+        {
+            "id": 4,
+            "shopName":"米村拌饭（软景中心店）",
+            "name": "烤牛肉拌饭",
+            "Spe":"正常",
+            "price": 27,
+            "image": "https://www.jiamengcy.com/uploads/230309/1-230309101429453.png"
+        }
+    ],
+    "indexIcon1":[
+        {
+            "id":1,
+            "name":"iconfont icon-meituan",
+            "title":"外卖"
+        },
+        {
+            "id":2,
+            "name":"iconfont icon-meituan",
+            "title":"外卖"
+        },
+        {
+            "id":3,
+            "name":"icon-meituan",
+            "title":"外卖"
+        },{
+            "id":4,
+            "name":"icon-meituan",
+            "title":"外卖"
+        }
+    ]
+}

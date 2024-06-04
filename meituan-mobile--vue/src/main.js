@@ -1,5 +1,7 @@
 import './assets/main.css'
 import './assets/icon/iconfont.css'
+import './assets/swiper/swiper.min.css'
+import './assets/swiper/swiper.min.js'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
@@ -9,7 +11,8 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import Vant from 'vant';
 import 'vant/lib/index.css';
-import * as echarts from 'echarts'  
+import * as echarts from 'echarts';  
+import '@vant/touch-emulator';
 
 const app = createApp(App)
 

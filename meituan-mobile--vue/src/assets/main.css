@@ -23,4 +23,10 @@ body{
 :root{
   --yuan-main-color:#c00;
   /* color:var(--yuan-main-color); */
+  --miao-main-color:rgb(244, 220, 98);
+  --miao-main-bottom-color:rgb(255, 204, 0);
+  --miao-black-color:rgb(0,0,0);
+  --miao-white-color:rgb(255,255,255);
+  --miao-grey-color:rgb(172, 172, 172);
+  --miao-bgc-color: #fbfbfb;
 }
