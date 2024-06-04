@@ -18,8 +18,12 @@
                 <van-swipe-item>
                     <miao-icon :list="arr"></miao-icon>
                 </van-swipe-item>
-                <van-swipe-item>2</van-swipe-item>
-                <van-swipe-item>3</van-swipe-item>
+                <van-swipe-item>
+                    <miao-icon :list="arr1"></miao-icon>
+                </van-swipe-item>
+                <van-swipe-item>
+                    <miao-icon :list="arr2"></miao-icon>
+                </van-swipe-item>
             </van-swipe>
         </van-pull-refresh>
 
@@ -74,6 +78,8 @@ const onRefresh = () => {
 
     const axios = inject("$axios");
     const arr=ref([]);
+    const arr1=ref([]);
+    const arr2=ref([]);
     onBeforeMount(() => {
         const url=`http://localhost:3000/indexIcon1`;
      axios.get(url).then(res=>{
@@ -83,11 +89,31 @@ const onRefresh = () => {
             alert("网络问题或其他："+err);
             console.log(err)}
            );
+        const url1=`http://localhost:3000/indexIcon2`;
+           axios.get(url1).then(res=>{
+                   console.log(res.data);
+                   arr1.value=res.data;             
+           }).catch(err=>{
+            alert("网络问题或其他："+err);
+            console.log(err)}
+           );
+        const url2=`http://localhost:3000/indexIcon3`;
+           axios.get(url2).then(res=>{
+                   console.log(res.data);
+                   arr2.value=res.data;             
+           }).catch(err=>{
+            alert("网络问题或其他："+err);
+            console.log(err)}
+           );
     })
 </script>
 
 <style scoped>
 @import '../assets/icon/iconfont.css';
+.miao{
+    background-color: var(--miao-main-color);
+    height: 1000px;
+}
 .location {
     padding: 10px 0 0 11px;
     font-size: 10px;
@@ -151,7 +177,7 @@ const onRefresh = () => {
 .van-pull-refresh {
     position: absolute;
     top: 78px;
-    height: 89%;
+    height: 100%;
     left: 0;
     right: 0;
     z-index: 0;
@@ -171,7 +197,7 @@ const onRefresh = () => {
 
 .van-swipe-item {
     top: 7px;
-    height: 120px;
+    height: 190px;
 }
 
 </style>

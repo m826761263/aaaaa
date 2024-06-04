@@ -13,7 +13,7 @@
             <div class="title3">
                 <div class="title3-1">
                     全部
-                    <span>(2)</span>
+                    <span>（{{sum1}}）</span>
                     <van-icon name="arrow-down" />
                 </div>
                 <div class="title3-2">
@@ -23,10 +23,11 @@
                 </div>
             </div>
         </div>
-
-        <miao-card></miao-card>
+        <van-pull-refresh v-model="isLoading" success-text="刷新成功" @refresh="onRefresh">
+            <miao-card :list="arr"></miao-card>
+        </van-pull-refresh>
         <van-submit-bar :price="sum" button-text="结算" button-text-color="black" button-color="rgb(244, 220, 98)"
-            @submit="onSubmit">
+            @submit="onSubmit" decimal-length="2">
             <van-checkbox v-model="checked">全选</van-checkbox>
         </van-submit-bar>
         <van-tabbar class="van-hairline--top" v-model="active">
@@ -63,7 +64,14 @@ const onClickLink = () => showToast("修改地址");
 const sum = computed(() => {
     let he = 0;
     for (let v of arr.value) {
-        he += v.price * v.count;
+        he += v.price*100;
+    }
+    return he;
+});
+const sum1 = computed(() => {
+    let he = 0;
+    for (let v of arr.value) {
+        he = Math.max(he, v.id);
     }
     return he;
 });
@@ -83,9 +91,22 @@ onBeforeMount(() => {
             console.log(err);
         });
 });
+
+const count = ref(0);
+const isLoading = ref(false);
+const onRefresh = () => {
+    setTimeout(() => {
+        isLoading.value = false;
+        count.value++;
+    }, 1000);
+};
 </script>
 
 <style scoped>
+.miao{
+    background-color:var(--miao-bgc-color);
+    height: 1000px;
+}
 >>>.van-tabbar-item--active .van-tabbar-item__icon {
     color: var(--miao-main-bottom-color);
     transform: scale(1.2);
@@ -99,7 +120,14 @@ onBeforeMount(() => {
 >>>.van-button__text {
     color: #000;
 }
-
+.van-pull-refresh {
+    position: absolute;
+    top: 78px;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
 .van-submit-bar {
     position: fixed;
     bottom: 50px;
@@ -109,6 +137,9 @@ onBeforeMount(() => {
     display: flex;
     align-items: baseline;
     position: relative;
+}
+.title>h2{
+    margin: 5px 0 2px 10px;
 }
 
 .title1 {
@@ -123,10 +154,28 @@ onBeforeMount(() => {
 
 .title2 {
     font-size: 12px;
-    padding-left: 195px;
+    padding-left: 185px;
 }
 .title3 {
     display: flex;
 }
-.title
+.title3-1{
+    display: flex;
+    align-items: center;
+    margin: 10px 15px 5px 15px;
+    background-color: #fce39a;
+    border: 1px solid #fcb654;
+    padding: 5px 5px 5px 10px;
+    border-radius: 15px;
+    font-size: 10px;
+}
+.title3-2{
+    display: flex;
+    align-items: center;
+    margin: 10px 15px 5px 15px;
+    background-color: var(--miao-grey-color);
+    padding: 5px 5px 5px 10px;
+    border-radius: 15px;
+    font-size: 10px;
+}
 </style>

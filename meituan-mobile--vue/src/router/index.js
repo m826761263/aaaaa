@@ -53,6 +53,12 @@ const router = createRouter({
       name: 'massage',
       component: () => import('../views/MiaoMassage.vue')
     }
+    ,
+    {
+      path: '/test',
+      name: 'tset',
+      component: () => import('../views/test.vue')
+    }
   ]
 })
 

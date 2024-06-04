@@ -5,53 +5,275 @@
             "shopName":"米村拌饭（软景中心店）",
             "name": "烤牛肉拌饭",
             "spe":"正常",
-            "price": 27,
-            "image": "https://www.jiamengcy.com/uploads/230309/1-230309101429453.png"
+            "price": 27.00,
+            "image": "https://www.jiamengcy.com/uploads/230309/1-230309101429453.png",
+            "time":"29分钟达"
         },
         {
             "id": 2,
             "shopName":"蛙呀挖·沸腾牛蛙·烤鱼",
             "name": "炭烧紫苏香辣蛙",
-            "Spe":"1000克、微辣",
+            "spe":"规格:1000克、微辣",
             "price": 64.3,
-            "image": "https://img.zcool.cn/community/01e82061aad29d11013f01cda216c7.jpg"
-        },
-        {
-            "id": 3,
-            "shopName":"米村拌饭（软景中心店）",
-            "name": "烤牛肉拌饭",
-            "Spe":"正常",
-            "price": 27,
-            "image": "https://www.jiamengcy.com/uploads/230309/1-230309101429453.png"
-        },
-        {
-            "id": 4,
-            "shopName":"米村拌饭（软景中心店）",
-            "name": "烤牛肉拌饭",
-            "Spe":"正常",
-            "price": 27,
-            "image": "https://www.jiamengcy.com/uploads/230309/1-230309101429453.png"
+            "image": "https://img.zcool.cn/community/01e82061aad29d11013f01cda216c7.jpg",
+            "time":"34分钟达"
         }
     ],
     "indexIcon1":[
         {
             "id":1,
-            "name":"iconfont icon-meituan",
+            "name":"iconfont icon-meituan1",
             "title":"外卖"
         },
         {
             "id":2,
-            "name":"iconfont icon-meituan",
-            "title":"外卖"
+            "name":"iconfont icon-_shangdian",
+            "title":"超市便利"
         },
         {
             "id":3,
-            "name":"icon-meituan",
-            "title":"外卖"
+            "name":"iconfont icon-jiudian",
+            "title":"酒店民宿"
         },{
             "id":4,
-            "name":"icon-meituan",
-            "title":"外卖"
+            "name":"iconfont icon-xiuxianyule",
+            "title":"休闲玩乐"
+        },{
+            "id":5,
+            "name":"iconfont icon-yaoxiang",
+            "title":"看病买药"
+        },{
+            "id":6,
+            "name":"iconfont icon-meishi",
+            "title":"美食"
+        },{
+            "id":7,
+            "name":"iconfont icon-tubiaozhizuomoban",
+            "title":"蔬菜水果"
+        },{
+            "id":8,
+            "name":"iconfont icon-huochepiao",
+            "title":"火车票机票"
+        },{
+            "id":9,
+            "name":"iconfont icon-kuaidiyuan",
+            "title":"跑腿"
+        }
+        ,{
+            "id":10,
+            "name":"iconfont icon-maoyan",
+            "title":"电影演出"
+        },{
+            "id":11,
+            "name":"iconfont icon-youxuan",
+            "title":"美团优选"
+        },{
+            "id":12,
+            "name":"iconfont icon-icon_order",
+            "title":"拼好饭"
+        },{
+            "id":13,
+            "name":"iconfont icon-zixingche",
+            "title":"骑车"
+        },{
+            "id":14,
+            "name":"iconfont icon-shu",
+            "title":"免费水果"
+        },{
+            "id":15,
+            "name":"iconfont icon-tejia",
+            "title":"特价团"
+        }
+    ],
+    "indexIcon2":[
+        {
+            "id":1,
+            "name":"iconfont icon-icon",
+            "title":"天天红包"
+        },
+        {
+            "id":2,
+            "name":"iconfont icon-dache",
+            "title":"打车"
+        },
+        {
+            "id":3,
+            "name":"iconfont icon-KTV",
+            "title":"KTV"
+        },{
+            "id":4,
+            "name":"iconfont icon-Icon_set-footprint-- ",
+            "title":"按摩足疗"
+        },{
+            "id":5,
+            "name":"iconfont icon-huabankaobei",
+            "title":"洗浴汗蒸"
+        },{
+            "id":6,
+            "name":"iconfont icon-lifa",
+            "title":"理发男士"
+        },{
+            "id":7,
+            "name":"iconfont icon-Group",
+            "title":"景点游玩"
+        },{
+            "id":8,
+            "name":"iconfont icon-zuche",
+            "title":"租车"
+        },{
+            "id":9,
+            "name":"iconfont icon-erbing",
+            "title":"棋牌室"
+        }
+        ,{
+            "id":10,
+            "name":"iconfont icon-shoujichongzhishi",
+            "title":"手机充值"
+        },{
+            "id":11,
+            "name":"iconfont icon-gaopinzhi",
+            "title":"品质百货"
+        },{
+            "id":12,
+            "name":"iconfont icon-ziyuan4",
+            "title":"旅游度假"
+        },{
+            "id":13,
+            "name":"iconfont icon-minsu_",
+            "title":"民宿公寓"
+        },{
+            "id":14,
+            "name":"iconfont icon-meishi1",
+            "title":"企业订餐"
+        },{
+            "id":15,
+            "name":"iconfont icon-lirenmeirong",
+            "title":"医学美容"
+        }
+    ],
+    "indexIcon3":[
+        {
+            "id":1,
+            "name":"iconfont icon-yuyuefuwu",
+            "title":"生活服务"
+        },
+        {
+            "id":2,
+            "name":"iconfont icon-chongwu",
+            "title":"宠物"
+        },
+        {
+            "id":3,
+            "name":"iconfont icon-qiche",
+            "title":"汽车票"
+        },{
+            "id":4,
+            "name":"iconfont icon-yaling",
+            "title":"运动健身"
+        },{
+            "id":5,
+            "name":"iconfont icon-_jiuba",
+            "title":"酒吧"
+        },{
+            "id":6,
+            "name":"iconfont icon-xiangao",
+            "title":"点我有钱"
+        },{
+            "id":7,
+            "name":"iconfont icon-CY",
+            "title":"饮品小吃"
+        },{
+            "id":8,
+            "name":"iconfont icon-youxi",
+            "title":"电玩游戏"
+        },{
+            "id":9,
+            "name":"iconfont icon-chongdianbao",
+            "title":"充电宝"
+        }
+        ,{
+            "id":10,
+            "name":"iconfont icon-zhijiayou-",
+            "title":"美甲美睫"
+        },{
+            "id":11,
+            "name":"iconfont icon-qinzi",
+            "title":"亲子乐园"
+        },{
+            "id":12,
+            "name":"iconfont icon-yuechi",
+            "title":"密室剧场"
+        },{
+            "id":13,
+            "name":"iconfont icon-weiju",
+            "title":"全民种菜"
+        },{
+            "id":14,
+            "name":"iconfont icon-xiaoshuoyuedu",
+            "title":"免费小说"
+        },{
+            "id":15,
+            "name":"iconfont icon-quanbu",
+            "title":"全部服务"
+        }
+    ],
+    "message":[
+        {
+            "id":1,
+            "shopname":"佟源记炸肉（沈阳青年大街店）福利粉丝群",
+            "img":"https://pic.nximg.cn/file/20230312/19742445_112828123102_2.jpg",
+            "tag":9,
+            "time":"12:27",
+            "detail":"限时抢购正在进行中，低级抢购手慢无"
+        }, {
+            "id":2,
+            "shopname":"蜜雪冰城（软景中心点）福利粉丝群",
+            "img":"https://pic.nximg.cn/file/20201231/32358264_150133363081_2.jpg",
+            "tag":3,
+            "time":"11:50",
+            "detail":"您收到一张满30减5的代金券，赶快进群领取吧"
+        }, {
+            "id":3,
+            "shopname":"米粉事务局（软景中心点）福利粉丝群",
+            "img":"https://ts1.cn.mm.bing.net/th/id/R-C.00f2094b9497c46a5680c0807ac4fe2f?rik=yK8V9WWIaJRqSg&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20200325%2f932329c552734f54a6f801ad03c711e3.jpeg&ehk=dBl%2fRGlfxKIbhAtEKvAEKqG7%2bExZcC0mf4BfBFzJ2EI%3d&risl=&pid=ImgRaw&r=0",
+            "tag":25,
+            "time":"10:17",
+            "detail":"本店热销产品来袭，赶快来看看吧"
+        }, {
+            "id":4,
+            "shopname":"茶百道（软景中心点）福利粉丝群",
+            "img":"https://fb-prod.oss-cn-shanghai.aliyuncs.com/uploads/images/202102/0f08d215f60d166535a11814e3b49e57.png",
+            "tag":" ",
+            "time":"10:01",
+            "detail":"直播开始啦~ 快来看看吧"
+        },{
+            "id":5,
+            "shopname":"佟源记炸肉（沈阳青年大街店）福利粉丝群",
+            "img":"https://pic.nximg.cn/file/20230312/19742445_112828123102_2.jpg",
+            "tag":9,
+            "time":"12:27",
+            "detail":"限时抢购正在进行中，低级抢购手慢无"
+        }, {
+            "id":6,
+            "shopname":"蜜雪冰城（软景中心点）福利粉丝群",
+            "img":"https://pic.nximg.cn/file/20201231/32358264_150133363081_2.jpg",
+            "tag":3,
+            "time":"11:50",
+            "detail":"您收到一张满30减5的代金券，赶快进群领取吧"
+        }, {
+            "id":7,
+            "shopname":"米粉事务局（软景中心点）福利粉丝群",
+            "img":"https://ts1.cn.mm.bing.net/th/id/R-C.00f2094b9497c46a5680c0807ac4fe2f?rik=yK8V9WWIaJRqSg&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20200325%2f932329c552734f54a6f801ad03c711e3.jpeg&ehk=dBl%2fRGlfxKIbhAtEKvAEKqG7%2bExZcC0mf4BfBFzJ2EI%3d&risl=&pid=ImgRaw&r=0",
+            "tag":25,
+            "time":"10:17",
+            "detail":"本店热销产品来袭，赶快来看看吧"
+        }, {
+            "id":8,
+            "shopname":"茶百道（软景中心点）福利粉丝群",
+            "img":"https://fb-prod.oss-cn-shanghai.aliyuncs.com/uploads/images/202102/0f08d215f60d166535a11814e3b49e57.png",
+            "tag":" ",
+            "time":"10:01",
+            "detail":"直播开始啦~ 快来看看吧"
         }
     ]
 }

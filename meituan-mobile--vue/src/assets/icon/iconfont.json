@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1339",
+      "name": "微距",
+      "font_class": "weiju",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "1079462",
+      "name": "打车",
+      "font_class": "dache",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "25677409",
+      "name": "二饼",
+      "font_class": "erbing",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "21585962",
+      "name": "橡皮擦",
+      "font_class": "xiangpica",
+      "unicode": "e6d3",
+      "unicode_decimal": 59091
+    },
+    {
       "icon_id": "1330564",
       "name": "会员权益",
       "font_class": "huiyuanquanyi",

@@ -21,12 +21,14 @@ body{
   margin: 0 auto;
 }
 :root{
-  --yuan-main-color:#c00;
+  --yuan-main-color:rgb(251, 121, 8);
   /* color:var(--yuan-main-color); */
   --miao-main-color:rgb(244, 220, 98);
   --miao-main-bottom-color:rgb(255, 204, 0);
   --miao-black-color:rgb(0,0,0);
   --miao-white-color:rgb(255,255,255);
   --miao-grey-color:rgb(172, 172, 172);
-  --miao-bgc-color: #fbfbfb;
+  --miao-bgc-color: #f3f3f3;
+  --miao-font-color:#9c9c9c;
+  --miao-price-color:#ee0a24;
 }
