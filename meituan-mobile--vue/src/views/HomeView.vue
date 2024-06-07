@@ -10,6 +10,7 @@
       <router-link to="/settings">设置</router-link>
       <router-link to="/massage">消息</router-link>
       <router-link to="/test">测试</router-link>
+      <router-link to="/menu">测试</router-link>
     </section>
   </main>
 </template>

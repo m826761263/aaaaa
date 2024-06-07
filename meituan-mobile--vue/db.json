@@ -1,13 +1,27 @@
 {
-    "shop": [
+    "shops": [
         {
             "id": 1,
-            "shopName":"米村拌饭（软景中心店）",
+            "shopName": "米村拌饭（软景中心店）",
+            "titleimage": "https://p0.meituan.net/business/48efa6a824d724793d2ebeec3bd8ea05266921.png?t=1717377319606@750w",
             "name": "烤牛肉拌饭",
-            "spe":"正常",
-            "price": 27.00,
+            "price": 27,
             "image": "https://www.jiamengcy.com/uploads/230309/1-230309101429453.png",
-            "time":"29分钟达"
+            "time": "29分钟达",
+            "times": "50分钟",
+            "tag": "3.3折起",
+            "sales": "月售2000+",
+            "detail": "牛肉粒饱满，照烧汁浓郁，咸甜适中，肉香满口。",
+            "weight": "约385克",
+            "flavor": "咸鲜",
+            "sales1": "月售 600份",
+            "ingredient": "大米，菜心，玉米粒，牛肉粒，胡萝卜，杏鲍菇",
+            "auxiliary": "盐，味精，芝麻",
+            "shopscore": 4.5,
+            "score": "4.8分",
+            "deliveryTime": "配送约29分钟",
+            "notice": " 珍惜粮食，光盘行动，适量点餐，避免浪费。温馨提升:因配送及平台不同，外卖与堂食价格不同，请您理解。米村拌饭，全国门店1000家，品尝朝鲜族特色美食，就来米村拌饭。",
+            "avatar": "https://p1.meituan.net/waimaipoi/b22ad7427b0c138e80769ccd6d3dc436285501.png@130w"
         },
         {
             "id": 2,
@@ -16,7 +30,115 @@
             "spe":"规格:1000克、微辣",
             "price": 64.3,
             "image": "https://img.zcool.cn/community/01e82061aad29d11013f01cda216c7.jpg",
-            "time":"34分钟达"
+            "time":"34分钟达",
+            "times":"50分钟",
+            "score":"4.8分",
+            "tag":"3.3折起",
+            "sales":"月售 2000+"
+        },{
+            "id":3,
+            "shopName":"茶百道",
+            "image":"https://p0.meituan.net/waimaipoi/2bab9b425bdfb0ad848df048f33cd4b0163507.jpg@212w",
+            "tag":"9.8折",
+            "describe":"外卖",
+            "times":"35分钟",
+            "sales":"月售5000+",
+            "score":"5.6分"
+        },{
+            "id":4,
+            "shopName":"朱家小馆羊杂面",
+            "image":"https://p0.meituan.net/business/bc65d721bec212a16df8ab6cd91a40b638939.jpg",
+            "tag":"8.8折",
+            "times":"20分钟",
+            "sales":"月售3000+",
+            "score":"3.8分",
+            "lose":"10减1"
+        },{
+            "id":5,
+            "shopName":"熊猫馋炒货",
+            "image":"https://p0.meituan.net/waimaipoi/d7187ecee52d9137ee8bb7a7add3b84e380934.jpg",
+            "tag":"特价团购",
+            "times":"20分钟",
+            "sales":"月售6000+",
+            "score":"8.0分"
+        },{
+            "id":6,
+            "shopName":"MissBlue生日蛋糕",
+            "image":"https://p0.meituan.net/waimaipoi/f64656426e5bd675c5a76039cc442a6418444.jpg",
+            "tag":"28减8",
+            "times":"80分钟",
+            "sales":"月售1000+",
+            "score":"4.9分"
+        },{
+            "id":7,
+            "shopName":"冒二三烤鸭",
+            "image":"https://p1.meituan.net/waimaipoi/6b19b262c9cf370852d36377a6180c84342482.jpg",
+            "tag":"单人餐26元",
+            "times":"25分钟",
+            "sales":"月售2000+",
+            "score":"5.3分"
+        },{
+            "id":8,
+            "shopName":"库迪咖啡",
+            "image":"https://p0.meituan.net/waimaipoi/83c4f4b7ebaf440111ce46881b69e4c0203870.png",
+            "tag":"减至2.3折",
+            "times":"10分钟",
+            "sales":"半年售100万+",
+            "score":"9.7分"
+        },{
+            "id":9,
+            "shopName":"蜜雪冰城",
+            "image":"https://p0.meituan.net/waimaipoi/cb06541fdd49255b485b704cf8a9d9344156472.png@212w",
+            "tag":"满15减1",
+            "times":"20分钟",
+            "sales":"月售1000+",
+            "score":"8.8分"
+        },{
+            "id":10,
+            "shopName":"塔斯汀中国汉堡",
+            "image":"https://p0.meituan.net/waimaipoi/e09d988840efd0b532dc31a0729adb51720685.jpg@212w",
+            "tag":"满30减2",
+            "times":"30分钟",
+            "sales":"季售2000+",
+            "score":"4.3分"
+        }
+    ],
+    "shop": [
+        {
+            "id": 1,
+            "shopName": "米村拌饭（软景中心店）",
+            "titleimage": "https://p0.meituan.net/business/48efa6a824d724793d2ebeec3bd8ea05266921.png?t=1717377319606@750w",
+            "name": "烤牛肉拌饭",
+            "price": 27,
+            "image": "https://www.jiamengcy.com/uploads/230309/1-230309101429453.png",
+            "time": "29分钟达",
+            "times": "50分钟",
+            "tag": "3.3折起",
+            "sales": "月售2000+",
+            "detail": "牛肉粒饱满，照烧汁浓郁，咸甜适中，肉香满口。",
+            "weight": "约385克",
+            "flavor": "咸鲜",
+            "sales1": "月售 600份",
+            "ingredient": "大米，菜心，玉米粒，牛肉粒，胡萝卜，杏鲍菇",
+            "auxiliary": "盐，味精，芝麻",
+            "shopscore": 4.5,
+            "score": "4.8分",
+            "deliveryTime": "配送约29分钟",
+            "notice": " 珍惜粮食，光盘行动，适量点餐，避免浪费。温馨提升:因配送及平台不同，外卖与堂食价格不同，请您理解。米村拌饭，全国门店1000家，品尝朝鲜族特色美食，就来米村拌饭。",
+            "avatar": "https://p1.meituan.net/waimaipoi/b22ad7427b0c138e80769ccd6d3dc436285501.png@130w"
+        },
+        {
+            "id": 2,
+            "shopName":"蛙呀挖·沸腾牛蛙·烤鱼",
+            "name": "炭烧紫苏香辣蛙",
+            "spe":"规格:1000克、微辣",
+            "price": 64.3,
+            "image": "https://img.zcool.cn/community/01e82061aad29d11013f01cda216c7.jpg",
+            "time":"34分钟达",
+            "times":"50分钟",
+            "score":"4.8分",
+            "tag":"3.3折起",
+            "sales":"月售 2000+"
         }
     ],
     "indexIcon1":[
@@ -242,36 +364,8 @@
         }, {
             "id":4,
             "shopname":"茶百道（软景中心点）福利粉丝群",
-            "img":"https://fb-prod.oss-cn-shanghai.aliyuncs.com/uploads/images/202102/0f08d215f60d166535a11814e3b49e57.png",
-            "tag":" ",
-            "time":"10:01",
-            "detail":"直播开始啦~ 快来看看吧"
-        },{
-            "id":5,
-            "shopname":"佟源记炸肉（沈阳青年大街店）福利粉丝群",
-            "img":"https://pic.nximg.cn/file/20230312/19742445_112828123102_2.jpg",
-            "tag":9,
-            "time":"12:27",
-            "detail":"限时抢购正在进行中，低级抢购手慢无"
-        }, {
-            "id":6,
-            "shopname":"蜜雪冰城（软景中心点）福利粉丝群",
-            "img":"https://pic.nximg.cn/file/20201231/32358264_150133363081_2.jpg",
-            "tag":3,
-            "time":"11:50",
-            "detail":"您收到一张满30减5的代金券，赶快进群领取吧"
-        }, {
-            "id":7,
-            "shopname":"米粉事务局（软景中心点）福利粉丝群",
-            "img":"https://ts1.cn.mm.bing.net/th/id/R-C.00f2094b9497c46a5680c0807ac4fe2f?rik=yK8V9WWIaJRqSg&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20200325%2f932329c552734f54a6f801ad03c711e3.jpeg&ehk=dBl%2fRGlfxKIbhAtEKvAEKqG7%2bExZcC0mf4BfBFzJ2EI%3d&risl=&pid=ImgRaw&r=0",
-            "tag":25,
-            "time":"10:17",
-            "detail":"本店热销产品来袭，赶快来看看吧"
-        }, {
-            "id":8,
-            "shopname":"茶百道（软景中心点）福利粉丝群",
-            "img":"https://fb-prod.oss-cn-shanghai.aliyuncs.com/uploads/images/202102/0f08d215f60d166535a11814e3b49e57.png",
-            "tag":" ",
+            "img":"https://p0.meituan.net/waimaipoi/2bab9b425bdfb0ad848df048f33cd4b0163507.jpg@212w",
+            "tag":"",
             "time":"10:01",
             "detail":"直播开始啦~ 快来看看吧"
         }

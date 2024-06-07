@@ -55,9 +55,16 @@ const router = createRouter({
     }
     ,
     {
-      path: '/test',
-      name: 'tset',
-      component: () => import('../views/test.vue')
+      path: '/test/:id',
+      name: 'test',
+      component: () => import('../views/test.vue'),
+      props: true
+    }
+    ,
+    {
+      path: '/menu',
+      name: 'menu',
+      component: () => import('../views/menu.vue')
     }
   ]
 })

@@ -14,19 +14,23 @@
         </div>
         <!-- 下拉刷新在这个top之下 -->
         <van-pull-refresh v-model="isLoading" success-text="刷新成功" @refresh="onRefresh">
-            <van-swipe :loop="false">
-                <van-swipe-item>
-                    <miao-icon :list="arr"></miao-icon>
-                </van-swipe-item>
-                <van-swipe-item>
-                    <miao-icon :list="arr1"></miao-icon>
-                </van-swipe-item>
-                <van-swipe-item>
-                    <miao-icon :list="arr2"></miao-icon>
-                </van-swipe-item>
-            </van-swipe>
+            <div class="one">
+                <van-swipe :loop="false">
+                    <van-swipe-item>
+                        <miao-icon :list="arr"></miao-icon>
+                    </van-swipe-item>
+                    <van-swipe-item>
+                        <miao-icon :list="arr1"></miao-icon>
+                    </van-swipe-item>
+                    <van-swipe-item>
+                        <miao-icon :list="arr2"></miao-icon>
+                    </van-swipe-item>
+                </van-swipe>
+                <lazy-component>
+                    <miao-list :miaolist="arr3"></miao-list>
+                </lazy-component>
+            </div>
         </van-pull-refresh>
-
         <van-tabbar class="van-hairline--top" v-model="active">
             <van-tabbar-item replace to="/index" name="home" icon="home-o" :class="{ active: active === 'home' }">
                 <p>首页</p>
@@ -53,10 +57,11 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import { createApp } from "vue";
 import { Tabbar, TabbarItem, showToast, Swipe, SwipeItem } from "vant";
-import { ref, onMounted } from "vue";
-import { reactive, inject, onBeforeMount} from "vue"
+import { ref, onMounted, } from "vue";
+import { reactive, inject, onBeforeMount } from "vue"
 import "animate.css";
 import MiaoIcon from "../components/MiaoIcon.vue";
+import MiaoList from '../components/miaoList.vue';
 
 const active = ref("home");
 const onSwiper = (swiper) => {
@@ -76,44 +81,59 @@ const onRefresh = () => {
 };
 
 
-    const axios = inject("$axios");
-    const arr=ref([]);
-    const arr1=ref([]);
-    const arr2=ref([]);
-    onBeforeMount(() => {
-        const url=`http://localhost:3000/indexIcon1`;
-     axios.get(url).then(res=>{
-                   console.log(res.data);
-                   arr.value=res.data;             
-           }).catch(err=>{
-            alert("网络问题或其他："+err);
-            console.log(err)}
-           );
-        const url1=`http://localhost:3000/indexIcon2`;
-           axios.get(url1).then(res=>{
-                   console.log(res.data);
-                   arr1.value=res.data;             
-           }).catch(err=>{
-            alert("网络问题或其他："+err);
-            console.log(err)}
-           );
-        const url2=`http://localhost:3000/indexIcon3`;
-           axios.get(url2).then(res=>{
-                   console.log(res.data);
-                   arr2.value=res.data;             
-           }).catch(err=>{
-            alert("网络问题或其他："+err);
-            console.log(err)}
-           );
-    })
+const axios = inject("$axios");
+const arr = ref([]);
+const arr1 = ref([]);
+const arr2 = ref([]);
+const arr3 = ref([]);
+onBeforeMount(() => {
+    const url = `http://localhost:3000/indexIcon1`;
+    axios.get(url).then(res => {
+        console.log(res.data);
+        arr.value = res.data;
+    }).catch(err => {
+        alert("网络问题或其他：" + err);
+        console.log(err)
+    }
+    );
+    const url1 = `http://localhost:3000/indexIcon2`;
+    axios.get(url1).then(res => {
+        console.log(res.data);
+        arr1.value = res.data;
+    }).catch(err => {
+        alert("网络问题或其他：" + err);
+        console.log(err)
+    }
+    );
+    const url2 = `http://localhost:3000/indexIcon3`;
+    axios.get(url2).then(res => {
+        console.log(res.data);
+        arr2.value = res.data;
+    }).catch(err => {
+        alert("网络问题或其他：" + err);
+        console.log(err)
+    }
+    );
+    const url3 = `http://localhost:3000/shops`;
+    axios.get(url3).then(res => {
+        console.log(res.data);
+        arr3.value = res.data;
+    }).catch(err => {
+        alert("网络问题或其他：" + err);
+        console.log(err)
+    }
+    );
+})
 </script>
 
 <style scoped>
 @import '../assets/icon/iconfont.css';
-.miao{
+
+.miao {
     background-color: var(--miao-main-color);
-    height: 1000px;
+    height: 844px;
 }
+
 .location {
     padding: 10px 0 0 11px;
     font-size: 10px;
@@ -136,6 +156,11 @@ const onRefresh = () => {
 .search-icon {
 
     margin: 10px;
+}
+
+.one {
+    background-color: var(--miao-white-color);
+    border-radius: 10px 10px 0 0;
 }
 
 #search {
@@ -165,24 +190,27 @@ const onRefresh = () => {
 }
 
 .top {
+    /* 将其固定在顶部 */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    height: 78px;
     background-color: var(--miao-main-color);
-    z-index: 0;
+    z-index: 1;
 }
+
 
 .van-pull-refresh {
     position: absolute;
     top: 78px;
-    height: 100%;
+    /* 设置高度无限 */
+    height: 1620px;
     left: 0;
     right: 0;
     z-index: 0;
-    border-radius: 10px 10px 0 0;
-    background-color: var(--miao-white-color);
+    background-color: var(--miao-bgc-color);
+
 }
 
 >>>.van-tabbar-item--active .van-tabbar-item__icon {
@@ -199,7 +227,6 @@ const onRefresh = () => {
     top: 7px;
     height: 190px;
 }
-
 </style>
 <!-- 加一个注释 ，苗桐菲 2024-05-21 -->
 <!--  -->

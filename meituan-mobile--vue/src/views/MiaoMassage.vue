@@ -12,7 +12,7 @@
        
         <van-pull-refresh v-model="isLoading" success-text="下拉加载更多" @refresh="onRefresh">  
             <van-search v-model="value" placeholder="请输入搜索关键词" shape="round" />
-            <miao-message :list="arr"></miao-message>
+            <miao-message :list="arr1"></miao-message>
         </van-pull-refresh>
       
         <van-sticky :offset-bottom="0">
@@ -42,9 +42,11 @@
 <script setup lang="ts">
 import { createApp } from "vue";
 import { Tabbar, TabbarItem } from "vant";
-import { ref, onMounted } from "vue";
+import { ref, onMounted,computed } from "vue";
 import { useRoute, useRouter } from 'vue-router';
 import "animate.css";
+import { onBeforeMount, inject } from "vue";
+import MiaoMessage from "../components/miaoMessage.vue";
 const router = useRouter();
 const active = ref("message");
 const toSettings = () => {
@@ -59,17 +61,26 @@ const onRefresh = () => {
     }, 500);
 };
 
-import { onBeforeMount, inject } from "vue";
-import MiaoMessage from "../components/miaoMessage.vue";
+const sum1 = computed(() => {
+    let he = 0;
+    for (let v of arr1.value) {
+        he+=v.tag;  
+        console.log(he);
+      
+    }
+    return he;
+    
+});
+
 const axios = inject("$axios");
-const arr = ref([]);
+const arr1 = ref([]);
 onBeforeMount(() => {
     const url = `http://localhost:3000/message`;
     axios
         .get(url)
         .then((res) => {
             console.log(res.data);
-            arr.value = res.data;
+            arr1.value = res.data;
         })
         .catch((err) => {
             alert("网络问题或其他：" + err);
@@ -106,7 +117,7 @@ onBeforeMount(() => {
     color:var(--miao-font-color);
 }
 .set{
-    padding-left: 200px;
+    padding-left: 190px;
 }
 .van-pull-refresh {
     position: absolute;

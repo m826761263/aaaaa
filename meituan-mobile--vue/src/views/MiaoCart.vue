@@ -58,14 +58,19 @@ import { Tabbar, TabbarItem, showToast, Card } from "vant";
 import { ref, onMounted, computed } from "vue";
 import { reactive, inject, onBeforeMount } from "vue";
 import MiaoCard from "../components/miaoCard.vue";
+import { t } from "@/assets/swiper/shared/utils.min.mjs";
 const active = ref("cart");
+const checked = ref(false);
 const onSubmit = () => showToast("点击按钮");
 const onClickLink = () => showToast("修改地址");
 const sum = computed(() => {
     let he = 0;
+    if(checked.value===true){
     for (let v of arr.value) {
         he += v.price*100;
     }
+    }
+    
     return he;
 });
 const sum1 = computed(() => {
@@ -73,6 +78,7 @@ const sum1 = computed(() => {
     for (let v of arr.value) {
         he = Math.max(he, v.id);
     }
+   
     return he;
 });
 
