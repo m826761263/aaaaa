@@ -1,0 +1,34 @@
+/* @import './base.css'; */
+
+h1,h2,h3,h4,h5,h6,body,p,ul,form,dl,dd,dt{
+  padding: 0;
+  margin: 0;
+}
+a,a:visited{
+  text-decoration: none;
+  color: #000;
+}
+ul,ol,li{
+  list-style:none;
+}
+img{
+  display: block;
+  border: none;
+}
+body{
+  min-width: 320px;
+  max-width:1280px;
+  margin: 0 auto;
+}
+:root{
+  --yuan-main-color:rgb(251, 121, 8);
+  /* color:var(--yuan-main-color); */
+  --miao-main-color:rgb(244, 220, 98);
+  --miao-main-bottom-color:rgb(255, 204, 0);
+  --miao-black-color:rgb(0,0,0);
+  --miao-white-color:rgb(255,255,255);
+  --miao-grey-color:rgb(172, 172, 172);
+  --miao-bgc-color: #f3f3f3;
+  --miao-font-color:#9c9c9c;
+  --miao-price-color:#ee0a24;
+}
