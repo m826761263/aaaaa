@@ -6,7 +6,7 @@
                     <van-icon name="arrow" />
                 </van-checkbox>
 
-            <router-link :to="{ name: 'test', params: { id: v.id } }">
+            <router-link :to="{ name: 'list', params: { id: v.id } }">
                 <van-card num="2" class="goods-card" :price="v.price" :desc="v.spe" :title="v.name" :thumb="v.image" />
                 <template #right>
                     <van-button square text="删除" type="danger" class="delete-button" />
@@ -25,13 +25,6 @@ const props = defineProps(
     }
 )
 const checked = ref(false);
-//实现删除功能
-const checkedResult = ref(['a', 'b']);
-const checkedResultChange = (value: string[]) => {
-      const checkedCount = value.length
-      isCheckAll.value = checkedCount === list.length
-      isIndeterminate.value = checkedCount > 0 && checkedCount < list.length
-    }
 </script>
 
 <style scoped>

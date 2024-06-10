@@ -20,51 +20,64 @@ const router = createRouter({
     {
       path: '/index',
       name: 'index',
-      component: () => import('../views/MiaoIndex.vue')
+      component: () => import('../views/MiaoIndex.vue'),
+      meta:{requireAuth:true}
     },
     {
-      path: '/list',
+      path: '/list/:id',
       name: 'list',
-      component: () => import('../views/MiaoList.vue')
+      component: () => import('../views/MiaoList.vue'),
+      props: true,
+      meta:{requireAuth:true}
     },
     {
-      path: '/detail',
+      path: '/detail/:id',
       name: 'detail',
-      component: () => import('../views/MiaoDetile.vue')
+      component: () => import('../views/MiaoDetile.vue'),
+      props:true
+      ,meta:{requireAuth:true}
     },
     {
       path: '/my',
       name: 'my',
-      component: () => import('../views/MiaoMy.vue')
+      component: () => import('../views/MiaoMy.vue'),
+      meta:{requireAuth:true}
     },
     {
       path: '/cart',
       name: 'cart',
-      component: () => import('../views/MiaoCart.vue')
+      component: () => import('../views/MiaoCart.vue'),
+      meta:{requireAuth:true}
     },
     {
       path: '/settings',
       name: 'settings',
-      component: () => import('../views/MiaoSettings.vue')
+      component: () => import('../views/MiaoSettings.vue'),
+      meta:{requireAuth:true}
     }
     ,
     {
       path: '/massage',
       name: 'massage',
-      component: () => import('../views/MiaoMassage.vue')
+      component: () => import('../views/MiaoMassage.vue'),
+      meta:{requireAuth:true}
     }
     ,
     {
-      path: '/test/:id',
-      name: 'test',
-      component: () => import('../views/test.vue'),
-      props: true
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/Miaologin.vue'),
+    },
+    {
+      path: '/reg',
+      name: 'reg',
+      component: () => import('../views/MiaoRegister.vue'),
     }
     ,
     {
-      path: '/menu',
-      name: 'menu',
-      component: () => import('../views/menu.vue')
+      path: '/error',
+      name: 'error',
+      component: () => import('../views/Miao404.vue'),
     }
   ]
 })

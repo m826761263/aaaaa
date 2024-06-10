@@ -2,7 +2,7 @@
     <div>
         <ul class="list">
             <li v-for="v in miaolist" :key="v.id">
-                <router-link :to="{name:'test',params:{id:v.id}}">
+                <router-link :to="{name:'list',params:{id:v.id}}">
                 <div class="miao">
                     <div class="kuang">
                         <img :src="v.image">

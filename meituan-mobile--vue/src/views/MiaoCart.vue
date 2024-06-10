@@ -59,6 +59,8 @@ import { ref, onMounted, computed } from "vue";
 import { reactive, inject, onBeforeMount } from "vue";
 import MiaoCard from "../components/miaoCard.vue";
 import { t } from "@/assets/swiper/shared/utils.min.mjs";
+import { useRouter } from "vue-router";
+const router = useRouter();
 const active = ref("cart");
 const checked = ref(false);
 const onSubmit = () => showToast("点击按钮");
@@ -95,6 +97,12 @@ onBeforeMount(() => {
         .catch((err) => {
             alert("网络问题或其他：" + err);
             console.log(err);
+            setTimeout(() => {
+                showToast({
+                    message: "网络错误",
+                });
+                router.push("/error");
+            }, 1000);
         });
 });
 

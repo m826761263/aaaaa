@@ -54,7 +54,6 @@
 
 <script setup lang="ts">
 import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
 import { createApp } from "vue";
 import { Tabbar, TabbarItem, showToast, Swipe, SwipeItem } from "vant";
 import { ref, onMounted, } from "vue";
@@ -62,6 +61,8 @@ import { reactive, inject, onBeforeMount } from "vue"
 import "animate.css";
 import MiaoIcon from "../components/MiaoIcon.vue";
 import MiaoList from '../components/miaoList.vue';
+import { useRouter } from "vue-router";
+const router = useRouter();
 
 const active = ref("home");
 const onSwiper = (swiper) => {
@@ -94,6 +95,12 @@ onBeforeMount(() => {
     }).catch(err => {
         alert("网络问题或其他：" + err);
         console.log(err)
+        setTimeout(() => {
+                showToast({
+                    message: "网络错误",
+                });
+                router.push("/error");
+            },0);
     }
     );
     const url1 = `http://localhost:3000/indexIcon2`;
@@ -101,8 +108,8 @@ onBeforeMount(() => {
         console.log(res.data);
         arr1.value = res.data;
     }).catch(err => {
-        alert("网络问题或其他：" + err);
         console.log(err)
+
     }
     );
     const url2 = `http://localhost:3000/indexIcon3`;
@@ -110,7 +117,6 @@ onBeforeMount(() => {
         console.log(res.data);
         arr2.value = res.data;
     }).catch(err => {
-        alert("网络问题或其他：" + err);
         console.log(err)
     }
     );
@@ -119,7 +125,6 @@ onBeforeMount(() => {
         console.log(res.data);
         arr3.value = res.data;
     }).catch(err => {
-        alert("网络问题或其他：" + err);
         console.log(err)
     }
     );

@@ -9,8 +9,9 @@
       <router-link to="/cart">购物车</router-link>
       <router-link to="/settings">设置</router-link>
       <router-link to="/massage">消息</router-link>
-      <router-link to="/test">测试</router-link>
-      <router-link to="/menu">测试</router-link>
+      <router-link to="/login">登录</router-link>
+      <router-link to="/reg">注册</router-link>
+      <router-link to="/error">404</router-link>
     </section>
   </main>
 </template>

@@ -63,7 +63,7 @@
     </div>
     <div class="nr7">
       <div class="one">
-        <div>退出登录</div>
+        <div @click="onClickExit">退出登录</div>
       </div>
     </div>
     <div class="nr8">
@@ -75,7 +75,29 @@
 <script setup lang="ts">
 import { createApp } from "vue";
 import { NavBar } from "vant";
+import { showConfirmDialog } from 'vant';
 const onClickLeft = () => history.back();
+const onClickExit = () => {
+// 在用户退出时执行退出操作
+// 例如：当用户点击退出按钮时调用 logout 函数
+
+
+showConfirmDialog({
+  message:
+    '退出后将不能查看订单\n确认退出吗？',
+})
+  .then(() => {
+    localStorage.removeItem('token')
+    console.log(localStorage.removeItem('token'))
+     setTimeout(() => {
+        window.location.href = "/";
+      }, 1000);
+  })
+  .catch(() => {
+     console.log('取消');
+  });
+
+}
 </script>
 
 <style scoped>
@@ -190,6 +212,9 @@ const onClickLeft = () => history.back();
   margin-top: 15px;
 }
 >>> .van-nav-bar__arrow {
-    color: var(--miao-black-color);
+  color: var(--miao-black-color);
+}
+>>> .van-popup .van-popup--center .van-dialog .van-dialog__message{
+  font-weight: bold;
 }
 </style>
