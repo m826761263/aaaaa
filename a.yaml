@@ -9,7 +9,7 @@ services:
       service:
         name: serverless-devs-application
       function:
-        name: meituan-mobile---vue-nrfq
+        name: meituan-mobile---vue-k2u6
         description: Initialize
         runtime: custom.debian10
         environmentVariables:
