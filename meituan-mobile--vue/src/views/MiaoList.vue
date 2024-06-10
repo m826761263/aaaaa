@@ -117,6 +117,7 @@ const items = [{ text: ' 招牌拌饭' }, { text: '朝鲜烹炒' }]
 <style scoped>
 >>> .van-cell--clickable {
   padding: 10px 16px 0 16px;
+  background-color: var(--miao-white-color);
 }
 .shopIcon_eX2_mV img {
   position: absolute;

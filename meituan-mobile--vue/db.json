@@ -4,11 +4,16 @@
       "id": "a30d",
       "username": "mtf103",
       "password": "mtf103"
+    },
+    {
+      "id": "e6e8",
+      "username": "mtf21001010103",
+      "password": "103"
     }
   ],
   "shops": [
     {
-      "id": 1,
+      "id": "1",
       "shopName": "米村拌饭（软景中心店）",
       "titleimage": "https://p0.meituan.net/business/48efa6a824d724793d2ebeec3bd8ea05266921.png?t=1717377319606@750w",
       "menu": [
@@ -63,7 +68,7 @@
       "image": "https://p1.meituan.net/waimaipoi/b22ad7427b0c138e80769ccd6d3dc436285501.png@130w"
     },
     {
-      "id": 2,
+      "id": "2",
       "shopName": "蛙呀挖·沸腾牛蛙·烤鱼",
       "titleimage": "https://p0.meituan.net/business/79d09d23fc7cd626381309faa527e84f858076.png@750w",
       "menu": [
@@ -94,7 +99,7 @@
       "shopscore": 4.5
     },
     {
-      "id": 3,
+      "id": "3",
       "shopName": "茶百道",
       "image": "https://p0.meituan.net/waimaipoi/2bab9b425bdfb0ad848df048f33cd4b0163507.jpg@212w",
       "tag": "9.8折",
@@ -104,7 +109,7 @@
       "score": "5.6分"
     },
     {
-      "id": 4,
+      "id": "4",
       "shopName": "朱家小馆羊杂面",
       "image": "https://p0.meituan.net/business/bc65d721bec212a16df8ab6cd91a40b638939.jpg",
       "tag": "8.8折",
@@ -114,7 +119,7 @@
       "lose": "10减1"
     },
     {
-      "id": 5,
+      "id": "5",
       "shopName": "熊猫馋炒货",
       "image": "https://p0.meituan.net/waimaipoi/d7187ecee52d9137ee8bb7a7add3b84e380934.jpg",
       "tag": "特价团购",
@@ -123,7 +128,7 @@
       "score": "8.0分"
     },
     {
-      "id": 6,
+      "id": "6",
       "shopName": "MissBlue生日蛋糕",
       "image": "https://p0.meituan.net/waimaipoi/f64656426e5bd675c5a76039cc442a6418444.jpg",
       "tag": "28减8",
@@ -132,7 +137,7 @@
       "score": "4.9分"
     },
     {
-      "id": 7,
+      "id": "7",
       "shopName": "冒二三烤鸭",
       "image": "https://p1.meituan.net/waimaipoi/6b19b262c9cf370852d36377a6180c84342482.jpg",
       "tag": "单人餐26元",
@@ -141,7 +146,7 @@
       "score": "5.3分"
     },
     {
-      "id": 8,
+      "id": "8",
       "shopName": "库迪咖啡",
       "image": "https://p0.meituan.net/waimaipoi/83c4f4b7ebaf440111ce46881b69e4c0203870.png",
       "tag": "减至2.3折",
@@ -150,7 +155,7 @@
       "score": "9.7分"
     },
     {
-      "id": 9,
+      "id": "9",
       "shopName": "蜜雪冰城",
       "image": "https://p0.meituan.net/waimaipoi/cb06541fdd49255b485b704cf8a9d9344156472.png@212w",
       "tag": "满15减1",
@@ -159,7 +164,7 @@
       "score": "8.8分"
     },
     {
-      "id": 10,
+      "id": "10",
       "shopName": "塔斯汀中国汉堡",
       "image": "https://p0.meituan.net/waimaipoi/e09d988840efd0b532dc31a0729adb51720685.jpg@212w",
       "tag": "满30减2",
@@ -170,7 +175,7 @@
   ],
   "shop": [
     {
-      "id": 1,
+      "id": "1",
       "shopName": "米村拌饭（软景中心店）",
       "titleimage": "https://p0.meituan.net/business/48efa6a824d724793d2ebeec3bd8ea05266921.png?t=1717377319606@750w",
       "name": "烤牛肉拌饭",
@@ -193,7 +198,7 @@
       "avatar": "https://p1.meituan.net/waimaipoi/b22ad7427b0c138e80769ccd6d3dc436285501.png@130w"
     },
     {
-      "id": 2,
+      "id": "2",
       "shopName": "蛙呀挖·沸腾牛蛙·烤鱼",
       "name": "炭烧紫苏香辣蛙",
       "spe": "规格:1000克、微辣",
@@ -208,238 +213,238 @@
   ],
   "indexIcon1": [
     {
-      "id": 1,
+      "id": "1",
       "name": "iconfont icon-meituan1",
       "title": "外卖"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "iconfont icon-_shangdian",
       "title": "超市便利"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "iconfont icon-jiudian",
       "title": "酒店民宿"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "iconfont icon-xiuxianyule",
       "title": "休闲玩乐"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "iconfont icon-yaoxiang",
       "title": "看病买药"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "iconfont icon-meishi",
       "title": "美食"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "iconfont icon-tubiaozhizuomoban",
       "title": "蔬菜水果"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "iconfont icon-huochepiao",
       "title": "火车票机票"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "iconfont icon-kuaidiyuan",
       "title": "跑腿"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "iconfont icon-maoyan",
       "title": "电影演出"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "iconfont icon-youxuan",
       "title": "美团优选"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "iconfont icon-icon_order",
       "title": "拼好饭"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "iconfont icon-zixingche",
       "title": "骑车"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "iconfont icon-shu",
       "title": "免费水果"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "iconfont icon-tejia",
       "title": "特价团"
     }
   ],
   "indexIcon2": [
     {
-      "id": 1,
+      "id": "1",
       "name": "iconfont icon-icon",
       "title": "天天红包"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "iconfont icon-dache",
       "title": "打车"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "iconfont icon-KTV",
       "title": "KTV"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "iconfont icon-Icon_set-footprint-- ",
       "title": "按摩足疗"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "iconfont icon-huabankaobei",
       "title": "洗浴汗蒸"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "iconfont icon-lifa",
       "title": "理发男士"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "iconfont icon-Group",
       "title": "景点游玩"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "iconfont icon-zuche",
       "title": "租车"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "iconfont icon-erbing",
       "title": "棋牌室"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "iconfont icon-shoujichongzhishi",
       "title": "手机充值"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "iconfont icon-gaopinzhi",
       "title": "品质百货"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "iconfont icon-ziyuan4",
       "title": "旅游度假"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "iconfont icon-minsu_",
       "title": "民宿公寓"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "iconfont icon-meishi1",
       "title": "企业订餐"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "iconfont icon-lirenmeirong",
       "title": "医学美容"
     }
   ],
   "indexIcon3": [
     {
-      "id": 1,
+      "id": "1",
       "name": "iconfont icon-yuyuefuwu",
       "title": "生活服务"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "iconfont icon-chongwu",
       "title": "宠物"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "iconfont icon-qiche",
       "title": "汽车票"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "iconfont icon-yaling",
       "title": "运动健身"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "iconfont icon-_jiuba",
       "title": "酒吧"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "iconfont icon-xiangao",
       "title": "点我有钱"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "iconfont icon-CY",
       "title": "饮品小吃"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "iconfont icon-youxi",
       "title": "电玩游戏"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "iconfont icon-chongdianbao",
       "title": "充电宝"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "iconfont icon-zhijiayou-",
       "title": "美甲美睫"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "iconfont icon-qinzi",
       "title": "亲子乐园"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "iconfont icon-yuechi",
       "title": "密室剧场"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "iconfont icon-weiju",
       "title": "全民种菜"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "iconfont icon-xiaoshuoyuedu",
       "title": "免费小说"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "iconfont icon-quanbu",
       "title": "全部服务"
     }
   ],
   "message": [
     {
-      "id": 1,
+      "id": "1",
       "shopname": "佟源记炸肉（沈阳青年大街店）福利粉丝群",
       "img": "https://pic.nximg.cn/file/20230312/19742445_112828123102_2.jpg",
       "tag": 9,
@@ -447,7 +452,7 @@
       "detail": "限时抢购正在进行中，低级抢购手慢无"
     },
     {
-      "id": 2,
+      "id": "2",
       "shopname": "蜜雪冰城（软景中心点）福利粉丝群",
       "img": "https://pic.nximg.cn/file/20201231/32358264_150133363081_2.jpg",
       "tag": 3,
@@ -455,7 +460,7 @@
       "detail": "您收到一张满30减5的代金券，赶快进群领取吧"
     },
     {
-      "id": 3,
+      "id": "3",
       "shopname": "米粉事务局（软景中心点）福利粉丝群",
       "img": "https://ts1.cn.mm.bing.net/th/id/R-C.00f2094b9497c46a5680c0807ac4fe2f?rik=yK8V9WWIaJRqSg&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20200325%2f932329c552734f54a6f801ad03c711e3.jpeg&ehk=dBl%2fRGlfxKIbhAtEKvAEKqG7%2bExZcC0mf4BfBFzJ2EI%3d&risl=&pid=ImgRaw&r=0",
       "tag": 25,
@@ -463,7 +468,7 @@
       "detail": "本店热销产品来袭，赶快来看看吧"
     },
     {
-      "id": 4,
+      "id": "4",
       "shopname": "茶百道（软景中心点）福利粉丝群",
       "img": "https://p0.meituan.net/waimaipoi/2bab9b425bdfb0ad848df048f33cd4b0163507.jpg@212w",
       "tag": "",
